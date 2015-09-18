@@ -13,7 +13,9 @@ setup(
     install_requires=[line for line in open('requirements.txt')],
     entry_points={
         'console_scripts': [
-            'generate-vspk = vspkgenerator:main'
+            'generate-vspk = vspkgenerator:generate_vspk'
+            'generate-vspkdoc = vspkgenerator:generate_vspkdoc'
+            'generate-vspk-apidoc = vspkgenerator:generate_vspk_apidoc'
         ]
     }
 )
