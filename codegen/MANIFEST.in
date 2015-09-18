@@ -1,5 +1,0 @@
-include *.txt
-include README.md
-include LICENSE
-
-include vspk/v3_2/resources/*.ini
