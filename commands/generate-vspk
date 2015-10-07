@@ -7,4 +7,4 @@ sys.path.append("../vspkgenerator")
 
 if __name__ == '__main__':
     from vspkgenerator import generate_vspk
-    sys.exit(generate_vspk(sys.argv))
+    sys.exit(generate_vspk(sys.argv, prefix="vspkgenerator"))

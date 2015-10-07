@@ -42,7 +42,7 @@ setup(
         'console_scripts': [
             'generate-vspk = vspkgenerator:generate_vspk',
             'generate-vspkdoc = vspkgenerator:generate_vspkdoc',
-            'generate-vspk-apidoc = vspkgenerator:generate_vspk_apidoc'
+            'generate-vsd-apidoc = vspkgenerator:generate_vsd_apidoc'
         ]
     }
 )
