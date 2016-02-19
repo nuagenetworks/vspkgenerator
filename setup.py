@@ -41,7 +41,6 @@ setup(
     entry_points={
         'console_scripts': [
             'generate-vspk = vspkgenerator:generate_vspk',
-            'generate-vspkdoc = vspkgenerator:generate_vspkdoc',
             'generate-vsd-apidoc = vspkgenerator:generate_vsd_apidoc'
         ]
     }
