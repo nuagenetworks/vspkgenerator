@@ -36,22 +36,4 @@ def generate_vspk(argv=sys.argv, prefix=None):
     path = pkg_resources.resource_filename('vspkgenerator', 'conf/config.ini')
     prefix = prefix if prefix else pkg_resources.resource_filename('vspkgenerator', '')
 
-    subprocess.call(["monogen-sdk", "--config", path, "--vanilla-prefix", prefix] + argv[1:])
-
-
-def generate_vspkdoc(argv=sys.argv, prefix=None):
-    """
-    """
-    path = pkg_resources.resource_filename('vspkgenerator', 'conf/config.ini')
-    prefix = prefix if prefix else pkg_resources.resource_filename('vspkgenerator', '')
-
-    subprocess.call(["monogen-sdkdoc", "--config", path, "--vanilla-prefix", prefix] + argv[1:])
-
-
-def generate_vsd_apidoc(argv=sys.argv, prefix=None):
-    """
-    """
-    path = pkg_resources.resource_filename('vspkgenerator', 'conf/config.ini')
-    prefix = prefix if prefix else pkg_resources.resource_filename('vspkgenerator', '')
-
-    subprocess.call(["monogen-apidoc", "--config", path, "--vanilla-prefix", prefix] + argv[1:])
+    subprocess.call(["monogen", "--config", path, "--vanilla-prefix", prefix] + argv[1:])

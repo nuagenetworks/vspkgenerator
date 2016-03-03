@@ -40,8 +40,7 @@ setup(
     install_requires=[line for line in open('requirements.txt')],
     entry_points={
         'console_scripts': [
-            'generate-vspk = vspkgenerator:generate_vspk',
-            'generate-vsd-apidoc = vspkgenerator:generate_vsd_apidoc'
+            'generate-vspk = vspkgenerator:generate_vspk'
         ]
     }
 )
