@@ -1,1 +1,1 @@
-monolithe==1.0.0
+git+https://github.com/nuagenetworks/monolithe.git
