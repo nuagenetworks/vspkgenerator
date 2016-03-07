@@ -37,7 +37,8 @@ setup(
     author_email='christophe.serafin@nuagenetworks.net',
     url="https://github.com/nuagenetworks/monolithe",
     classifiers=[],
-    install_requires=[line for line in open('requirements.txt')],
+    install_requires=['monolithe==1.0.0'],
+    dependency_links=['https://github.com/nuagenetworks/monolithe/archive/master.zip#egg=monolithe-1.0.0'],
     entry_points={
         'console_scripts': [
             'generate-vspk = vspkgenerator:generate_vspk'
