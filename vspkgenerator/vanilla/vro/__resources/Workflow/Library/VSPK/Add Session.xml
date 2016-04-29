@@ -19,6 +19,7 @@
 <display-name><![CDATA[Scriptable task]]></display-name>
 <script encoded='false'><![CDATA[session = new VSPKSession(username, password, enterprise, apiUrl);
 session.start();
+
 VSPKSessionManager.addSession(session);]]></script>
 <in-binding><bind name='apiUrl' type='string' export-name="apiUrl" ></bind>
 <bind name='username' type='string' export-name="username" ></bind>

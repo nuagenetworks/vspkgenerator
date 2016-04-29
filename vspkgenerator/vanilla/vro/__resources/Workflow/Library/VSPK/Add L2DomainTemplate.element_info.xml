@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Exported from [server]</comment>
+<entry key="categoryPath">Library.VSPK</entry>
+<entry key="name">Add L2DomainTemplate</entry>
+<entry key="type">Workflow</entry>
+<entry key="id">acd504b9-f34c-4b0a-b9f4-236b21e13316</entry>
+</properties>

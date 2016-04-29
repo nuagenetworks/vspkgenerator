@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Exported from [server]</comment>
+<entry key="categoryPath">Library.VSPK</entry>
+<entry key="name">Remove VirtualMachine</entry>
+<entry key="type">Workflow</entry>
+<entry key="id">ecb4dbef-fedb-4919-bba1-7ea8ac22731a</entry>
+</properties>
