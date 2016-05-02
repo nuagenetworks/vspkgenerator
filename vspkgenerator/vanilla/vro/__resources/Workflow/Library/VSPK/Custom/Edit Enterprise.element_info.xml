@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>Exported from [server]</comment>
-<entry key="categoryPath">Library.VSPK</entry>
+<entry key="categoryPath">Library.VSPK.Custom</entry>
 <entry key="name">Edit Enterprise</entry>
 <entry key="type">Workflow</entry>
 <entry key="id">f37b81d9-330f-4fcb-a4c7-31d88ad5e023</entry>

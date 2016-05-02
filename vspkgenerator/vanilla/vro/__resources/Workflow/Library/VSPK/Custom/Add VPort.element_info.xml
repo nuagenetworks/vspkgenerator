@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>Exported from [server]</comment>
-<entry key="categoryPath">Library.VSPK</entry>
+<entry key="categoryPath">Library.VSPK.Custom</entry>
 <entry key="name">Add VPort</entry>
 <entry key="type">Workflow</entry>
 <entry key="id">9cf0fd3d-1a45-4203-b401-bf31d912b25e</entry>

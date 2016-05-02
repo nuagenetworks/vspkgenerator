@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>Exported from [server]</comment>
-<entry key="categoryPath">Library.VSPK</entry>
+<entry key="categoryPath">Library.VSPK.Custom</entry>
 <entry key="name">Add VirtualMachine</entry>
 <entry key="type">Workflow</entry>
 <entry key="id">783805e5-c63a-46a4-9bf8-a3d118b26645</entry>

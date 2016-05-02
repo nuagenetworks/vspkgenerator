@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>Exported from [server]</comment>
-<entry key="categoryPath">Library.VSPK</entry>
+<entry key="categoryPath">Library.VSPK.Custom</entry>
 <entry key="name">Remove L2Domain</entry>
 <entry key="type">Workflow</entry>
 <entry key="id">ed6cd805-a44a-4a81-baf8-7416a440eaa2</entry>
