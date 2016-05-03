@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-<comment>Exported from [server]</comment>
-<entry key="categoryPath">LLibrary.VSPK.Custom</entry>
-<entry key="name">Remove Domain</entry>
-<entry key="type">Workflow</entry>
-<entry key="id">28819bc2-faf0-442b-a6ca-816497142914</entry>
-</properties>

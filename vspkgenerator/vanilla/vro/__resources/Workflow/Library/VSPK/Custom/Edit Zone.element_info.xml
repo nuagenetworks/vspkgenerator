@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-<comment>Exported from [server]</comment>
-<entry key="categoryPath">Library.VSPK.Custom</entry>
-<entry key="name">Edit Zone</entry>
-<entry key="type">Workflow</entry>
-<entry key="id">70ac89fd-444b-416f-b855-cdf76cb9b0e9</entry>
-</properties>
