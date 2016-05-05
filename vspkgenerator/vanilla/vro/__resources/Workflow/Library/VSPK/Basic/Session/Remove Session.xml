@@ -10,7 +10,7 @@
 </workflow-item>
 <workflow-item name='item1' out-name='item0' type='task' >
 <display-name><![CDATA[Scriptable task]]></display-name>
-<script encoded='false'><![CDATA[session.reset();
+<script encoded='false'><![CDATA[session.stop();
 
 VSPKSessionManager.removeSession(session);]]></script>
 <in-binding><bind name='session' type='VSPK:Session' export-name="session" ></bind>
