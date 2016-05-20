@@ -22,7 +22,6 @@ domain.templateID = domainTemplate.id;
 
 var enterprise = new VSPKEnterprise();
 enterprise.id = domainTemplate.parentId;
-enterprise.fetch(session);
 
 enterprise.createDomain(session, domain);]]></script>
 <in-binding><bind name='name' type='string' export-name="name" ></bind>

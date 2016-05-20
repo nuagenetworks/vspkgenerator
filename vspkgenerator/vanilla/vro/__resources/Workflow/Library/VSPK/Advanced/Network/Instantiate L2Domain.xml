@@ -22,7 +22,6 @@ l2Domain.templateID = l2DomainTemplate.id;
 
 var enterprise = new VSPKEnterprise();
 enterprise.id = l2DomainTemplate.parentId;
-enterprise.fetch(session);
 
 enterprise.createL2Domain(session, l2Domain);
 ]]></script>
