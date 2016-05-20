@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <workflow xmlns="http://vmware.com/vco/workflow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://vmware.com/vco/workflow http://vmware.com/vco/workflow/Workflow-v4.xsd" root-name="item1" object-name="workflow:name=generic" id="783805e5-c63a-46a4-9bf8-a3d118b26645"  version="0.0.0" api-version="6.0.0" allowed-operations="vef" restartMode="1" resumeFromFailedMode="0" >
-<display-name><![CDATA[Create VirtualMachine]]></display-name>
+<display-name><![CDATA[Create VM]]></display-name>
 <ref-types><![CDATA[(VSPK:VPort)]]></ref-types>
 <position x='100.0' y='50.0'/>
 <input><param name='vport' type='VSPK:VPort' >
