@@ -2,7 +2,6 @@
 
 vspk-java is a Java SDK for [Nuage VSP Platform](http://www.nuagenetworks.net/products/virtualized-services-platform/)
 
-
 ## License
 
 Copyright (c) 2015, Alcatel-Lucent Inc
