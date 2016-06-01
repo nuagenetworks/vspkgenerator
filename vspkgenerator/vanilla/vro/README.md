@@ -7,11 +7,12 @@ VSPK Plug-In for VMWare vRealize Orchestrator (vRO) README
    c. Login to Control Center
    d. Click the "Manage Plug-Ins" icon
    e. Click the "Browse..." button
-   f. Select o11nplugin-3.2.xxx.dar then click "Open"
-   g. Click the "Install" button. The plug-in version information should be displayed
-   h. Click the "Install" button
-   i. Click the "Statup Options" link
-   j. Click the "Restart" button
+   f. Select o11nplugin-3.2-xxx.vmoapp then click "Open"
+   g. Put a check mark beside "Accept EULA"
+   h. Click the "Install" button. The plug-in version information should be displayed
+   i. Click the "Install" button
+   j. Click the "Statup Options" link
+   k. Click the "Restart" button
 
 2. Start the Orchestrator Client:
 
@@ -69,12 +70,13 @@ VSPK Plug-In for VMWare vRealize Orchestrator (vRO) README
    b. From the context menu select the "Remove Enterprise" workflow
    e. Verify that the enterprise is removed from both VSPK plug-in's Inventory as well as from the VSD GUI
 
-8. General notes:
+General notes:
 
-   - In creation workflows (i.e. the workflows which names start with "Add ..."), the first input parameter requires a "fetcher". 
-     A fetcher is the parent folder to which the new object (that is going to be created as a result of the workflow execution) is going to be attached to. 
-     For example, when creating a new enterprise like we did in step #6, the fetcher field was pre-populated with "Enterprises" which is the folder 
-     from which we started the "Add Enterprise" workflow.
+   - In all the creation related workflows (i.e. the workflows which names start with "Add ..."), 
+     the first input parameter requires a "fetcher". A fetcher is the parent folder to which the new object 
+     (that is going to be created as a result of the workflow execution) is going to be attached to. 
+     For example, when creating a new enterprise like we did in step #6, the fetcher field was pre-populated 
+     with "Enterprises" which is the folder from which we started the "Add Enterprise" workflow.
 
 For support and feature requests, please contact:
 nuage-oss-support@alcatel-lucent.com
