@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workflow xmlns="http://vmware.com/vco/workflow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://vmware.com/vco/workflow http://vmware.com/vco/workflow/Workflow-v4.xsd" root-name="item1" object-name="workflow:name=generic" id="6f14881e-c1f9-4f66-98b7-d1eb4fdce2f2" version="0.0.0" api-version="6.0.0" allowed-operations="vef" restartMode="1" resumeFromFailedMode="0">
-  <display-name><![CDATA[Assign installer to NSG]]></display-name>
+  <display-name><![CDATA[Assign Installer to NSG]]></display-name>
   <ref-types>><![CDATA[(VSPK:NSGateway)]]></ref-types>>
   <position y="50.0" x="100.0"></position>
   <input>
@@ -15,7 +15,11 @@
     <script encoded="false"><![CDATA[var session = nsg.session;
 
 var bootstrap = nsg.bootstraps.getFirst(session);
-bootstrap.installerID = installer.id;
+if (installer) {
+   bootstrap.installerID = installer.id;
+} else {
+   bootstrap.installerID = null;
+}
 bootstrap.save(session);
 ]]></script>
     <in-binding>
@@ -32,6 +36,7 @@ bootstrap.save(session);
     </p-param>
     <p-param name="installer">
       <desc><![CDATA[installer]]></desc>
+      <p-qual kind="ognl" name="dataBinding" type="VSPK:User"><![CDATA[GetAction("net.nuagenetworks.vro.vspk","getNSGatewayInstaller").call( #nsg )]]></p-qual>
     </p-param>
   </presentation>
 </workflow>

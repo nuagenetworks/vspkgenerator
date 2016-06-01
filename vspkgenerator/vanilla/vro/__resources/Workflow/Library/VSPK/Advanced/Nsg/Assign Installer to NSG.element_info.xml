@@ -3,7 +3,7 @@
 <properties>
 <comment>Exported from [server]</comment>
 <entry key="categoryPath">Library.VSPK.Advanced.Nsg</entry>
-<entry key="name">Assign installer to NSG</entry>
+<entry key="name">Assign Installer to NSG</entry>
 <entry key="type">Workflow</entry>
 <entry key="id">6f14881e-c1f9-4f66-98b7-d1eb4fdce2f2</entry>
 </properties>
