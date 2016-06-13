@@ -7,12 +7,15 @@ VSPK Plug-In for VMWare vRealize Orchestrator (vRO) README
    c. Login to Control Center
    d. Click the "Manage Plug-Ins" icon
    e. Click the "Browse..." button
-   f. Select o11nplugin-3.2-xxx.vmoapp then click "Open"
-   g. Put a check mark beside "Accept EULA"
-   h. Click the "Install" button. The plug-in version information should be displayed
-   i. Click the "Install" button
-   j. Click the "Statup Options" link
-   k. Click the "Restart" button
+   f. Select the plug-in installer file to install:
+       i) For a VSD 3.2.x compatible plug-in, use o11nplugin-3.2.x.vmoapp
+      ii) For a VSD 4.0.x compatible plug-in, use o11nplugin-4.0.x.vmoapp
+   g. Click "Open"
+   h. Put a check mark beside "Accept EULA"
+   i. Click the "Install" button. The plug-in version information should be displayed
+   j. Click the "Install" button
+   k. Click the "Statup Options" link
+   l. Click the "Restart" button
 
 2. Start the Orchestrator Client:
 
@@ -25,7 +28,7 @@ VSPK Plug-In for VMWare vRealize Orchestrator (vRO) README
 3. Verify that VSPK plug-in is properly installed in vRO:
 
    a. In the Orchestrator Client main window, select Help->Installed plug-ins...
-   b. Check that VSPK version 3.2 shows up in the list of installed plug-ins
+   b. Check that VSPK (version 3.2.x or 4.0.x) shows up in the list of installed plug-ins
 
 5. Enable context menus in Orchestrator Client:
 
