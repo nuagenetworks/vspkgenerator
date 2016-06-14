@@ -6,7 +6,7 @@
 </param>
 <param name='username' type='string' >
 </param>
-<param name='password' type='string' >
+<param name='password' type='SecureString' >
 </param>
 <param name='enterprise' type='string' >
 </param>
@@ -23,7 +23,7 @@ session.start();
 VSPKSessionManager.addSession(session);]]></script>
 <in-binding><bind name='apiUrl' type='string' export-name="apiUrl" ></bind>
 <bind name='username' type='string' export-name="username" ></bind>
-<bind name='password' type='string' export-name="password" ></bind>
+<bind name='password' type='SecureString' export-name="password" ></bind>
 <bind name='enterprise' type='string' export-name="enterprise" ></bind>
 </in-binding><out-binding><bind name='session' type='VSPK:Session' export-name="session" ></bind>
 </out-binding><position x='204.5' y='55.40909090909091'/>
