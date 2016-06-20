@@ -1,0 +1,28 @@
+Changes from version 3.2.0 to version 3.2.1
+===========================================
+
+- Added the following workflows:
+   - Library/VSPK/Advanced/Nsg/Send NSG
+   - Library/VSPK/Advanced/Nsg/Assign Installer to NSG
+- Added the following action
+   - net.nuagenetworks/vro/vspk/getNSGatewatInstaller
+- Moved definition of generated enums to separate java files.
+- java-bambou: Fixed issue where fetcher still contained child objects after receiving empty response. Added relevant unit tests.
+- Generated vspk-vro 3.2.1 based on the latest changes made to the for 4.0 version:
+   - EgressACLEntryTemplate, add/edit workflows, added the following attributes: destinationPort, networkType, protocol, sourcePort
+   - EgressFloatingIPACLTemplateEntry, add/edit workflows, added the following attributes: action, DSCP, etherType, locationType, destinationPort, networkType, protocol, sourcePort
+   - InfrastructureGatewayProfile, add/edit workflows, added the following attributes: deadTimer, deadTimerEnabled
+   - InfrastructureVscProfile, add/edit workflows, added the following attributes: firstController, probeInterval, secondController
+   - IngressACLEntryTemplate, add/edit workflows, added the following attributes: destinationPort, networkType, protocol, sourcePort
+   - IngressAdvFwdEntryTemplate, add/edit workflows, added the following attributes: destinationPort, networkType, protocol, sourcePort
+   - IngressExternalServiceTemplateEntry, add/edit workflows, added the following attributes: destinationPort, networkType, protocol, sourcePort
+   - IngressExternalServiceTemplateEntry, add/edit workflows, removed the following attribute: redirectExternalServiceEndPointID
+   - MirrorDestination, add/edit workflows, added the following attributes: destinationIp
+   - NSRedundantGatewayGroup, add/edit workflows, added the following attributes: gatewayPeer1ID, gatewayPeer2ID
+   - PATNATPool, add/edit workflows, added the following attributes: defaultPATIP, endAddressRange, startAddressRange
+   - RedundancyGroup, add/edit workflows, added the following attributes: gatewayPeer1ID, gatewayPeer2ID
+   - SiteInfo, add/edit workflows, added the following attributes: siteIdentifier
+   - VPNConnection, add/edit workflows, added the following attributes: associatedWANServiceID
+   - WANService, add/edit workflows, added the following attributes: WANServiceIdentifier
+- Moved content of README.md to INSTALL.txt.   
+- In Library/VSPK/Basic/Add Session workflow: changed password attribute type from string to SecureString so that the typed password is not visible.
