@@ -7,6 +7,12 @@
 </param>
 <param name='name' type='string' >
 </param>
+<param name='externalID' type='string' >
+</param>
+<param name='description' type='string' >
+</param>
+<param name='assocL2Domain' type='VSPK:L2Domain' >
+</param>
 </input><output><param name='l2Domain' type='VSPK:L2Domain' >
 </param>
 </output><workflow-item name='item0' type='end' end-mode='0' >
@@ -19,6 +25,11 @@
 l2Domain = new VSPKL2Domain();
 l2Domain.name = name;
 l2Domain.templateID = l2DomainTemplate.id;
+l2Domain.externalID = externalID;
+l2Domain.description = description;
+if (assocL2Domain) {
+   l2Domain.associatedSharedNetworkResourceID = assocL2Domain.id;
+}
 
 var enterprise = new VSPKEnterprise();
 enterprise.id = l2DomainTemplate.parentId;
@@ -27,6 +38,9 @@ enterprise.createL2Domain(session, l2Domain);
 ]]></script>
 <in-binding><bind name='l2DomainTemplate' type='VSPK:L2DomainTemplate' export-name="l2DomainTemplate" ></bind>
 <bind name='name' type='string' export-name="name" ></bind>
+<bind name='externalID' type='string' export-name="externalID" ></bind>
+<bind name='description' type='string' export-name="description" ></bind>
+<bind name='assocL2Domain' type='VSPK:L2Domain' export-name="assocL2Domain" ></bind>
 </in-binding><out-binding><bind name='l2Domain' type='VSPK:L2Domain' export-name="l2Domain" ></bind>
 </out-binding><position x='204.5' y='55.40909090909091'/>
 </workflow-item>
@@ -34,5 +48,11 @@ enterprise.createL2Domain(session, l2Domain);
 <p-param name="l2DomainTemplate"><desc><![CDATA[l2DomainTemplate]]></desc>
 <p-qual name="contextualParameter" type="void" ><![CDATA[__NULL__]]></p-qual></p-param>
 <p-param name="name"><desc><![CDATA[name]]></desc>
+</p-param>
+<p-param name="externalID"><desc><![CDATA[externalID]]></desc>
+</p-param>
+<p-param name="description"><desc><![CDATA[description]]></desc>
+</p-param>
+<p-param name="assocL2Domain"><desc><![CDATA[assocL2Domain]]></desc>
 </p-param>
 </presentation></workflow>
