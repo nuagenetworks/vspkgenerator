@@ -1,3 +1,29 @@
+Changes from version 3.2.2 to version 3.2.3
+Changes from version 4.0.1 to version 4.0.2
+===========================================
+
+- Added support for disabling VSD notifications on a per VSPK Session basis
+     - Added "enableNotifications" field to the "Add Session" workflow. All remote VSD notifications can be diabled using this new field (it disables VSPK's push channel internally).
+- Added logic to generated "Add" workflow scripting blocks to prevent fields that have no values specified (i.e. empty string) to be persisted in VSD.
+- Added logic to generated "Edit" workflow scripting blocks to allow fields whose values have been removed (i.e. empty string) to be persisted as empty strings in VSD.
+
+Changes from version 3.2.1 to version 3.2.2
+Changes from version 4.0.0 to version 4.0.1
+===========================================
+
+- Bug fix: Prevent plug-in from being removed from the installed list of plug-ins when it cannot connect to VSD while vRO starts up
+- Bug fix: Fixed JSON mapping for Group.private_ and Subnet.public_ attributes
+- Replaced Fetcher input field with Default Parent in every "Add" workflow
+- Added "Assign User to Group" Advanced workflow
+- Added "Find" workflow to every Nuage object
+- Added support for metadata to every Nuage object
+- Added description and externalID as workflow input fields to every Basic workflow
+- Added input field to add/edit Port workflows: VLANRange
+- Added input fields to Add/Edit IngressACLTemplate workflows: active, defaultAllowIP, defaultAllowNonIP, allowL2AddressSpoof
+- Added input fields to Add/Edit EgressACLTemplate workflows: active, defaultAllowIP, defaultAllowNonIP
+- Added input fields to "Instantiate Domain" workflow: description, externalID 
+- Added input fields to "Instantiate L2Domain" workflow: description, externalID, assocL2Domain
+
 Changes from version 3.2.0 to version 3.2.1
 ===========================================
 
@@ -26,20 +52,3 @@ Changes from version 3.2.0 to version 3.2.1
    - WANService, add/edit workflows, added the following attributes: WANServiceIdentifier
 - Moved content of README.md to INSTALL.txt.   
 - In Library/VSPK/Basic/Add Session workflow: changed password attribute type from string to SecureString so that the typed password is not visible.
-
-Changes from version 3.2.1 to version 3.2.2
-Changes from version 4.0.0 to version 4.0.1
-===========================================
-
-- Bug fix: Prevent plug-in from being removed from the installed list of plug-ins when it cannot connect to VSD while vRO starts up
-- Bug fix: Fixed JSON mapping for Group.private_ and Subnet.public_ attributes
-- Replaced Fetcher input field with Default Parent in every "Add" workflow
-- Added "Assign User to Group" Advanced workflow
-- Added "Find" workflow to every Nuage object
-- Added support for metadata to every Nuage object
-- Added description and externalID as workflow input fields to every Basic workflow
-- Added input field to add/edit Port workflows: VLANRange
-- Added input fields to Add/Edit IngressACLTemplate workflows: active, defaultAllowIP, defaultAllowNonIP, allowL2AddressSpoof
-- Added input fields to Add/Edit EgressACLTemplate workflows: active, defaultAllowIP, defaultAllowNonIP
-- Added input fields to "Instantiate Domain" workflow: description, externalID 
-- Added input fields to "Instantiate L2Domain" workflow: description, externalID, assocL2Domain
