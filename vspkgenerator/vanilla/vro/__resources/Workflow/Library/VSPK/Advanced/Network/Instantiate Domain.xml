@@ -21,10 +21,18 @@
 <script encoded='false'><![CDATA[var session = domainTemplate.session;
 
 domain = new VSPKDomain();
-domain.name = name;
-domain.templateID = domainTemplate.id;
-domain.externalID = externalID;
-domain.description = description;
+if (name) {
+   domain.name = name;
+}
+if (domainTemplate) {
+   domain.templateID = domainTemplate.id;
+}
+if (externalID) {
+   domain.externalID = externalID;
+}
+if (description) {
+   domain.description = description;
+}
 
 var enterprise = new VSPKEnterprise();
 enterprise.id = domainTemplate.parentId;

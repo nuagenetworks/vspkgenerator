@@ -23,10 +23,18 @@
 <script encoded='false'><![CDATA[var session = l2DomainTemplate.session;
 
 l2Domain = new VSPKL2Domain();
-l2Domain.name = name;
-l2Domain.templateID = l2DomainTemplate.id;
-l2Domain.externalID = externalID;
-l2Domain.description = description;
+if (name) {
+   l2Domain.name = name;
+}
+if (l2DomainTemplate) {
+   l2Domain.templateID = l2DomainTemplate.id;
+}
+if (externalID) {
+   l2Domain.externalID = externalID;
+}
+if (description) {
+   l2Domain.description = description;
+}
 if (assocL2Domain) {
    l2Domain.associatedSharedNetworkResourceID = assocL2Domain.id;
 }
