@@ -6,6 +6,7 @@ Changes from version 4.0.1 to version 4.0.2
      - Added "enableNotifications" field to the "Add Session" workflow. All remote VSD notifications can be diabled using this new field (it disables VSPK's push channel internally).
 - Added logic to generated "Add" workflow scripting blocks to prevent fields that have no values specified (i.e. empty string) to be persisted in VSD.
 - Added logic to generated "Edit" workflow scripting blocks to allow fields whose values have been removed (i.e. empty string) to be persisted as empty strings in VSD.
+- Assigned version number to actions and workflows to fix plug-in upgrade issue.
 
 Changes from version 3.2.1 to version 3.2.2
 Changes from version 4.0.0 to version 4.0.1
