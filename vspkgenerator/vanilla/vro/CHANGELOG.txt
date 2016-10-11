@@ -1,3 +1,9 @@
+Changes from version 4.0.2 to version 4.0.3
+===========================================
+
+- Upgraded to VSD specification version 4.0.5  
+- Set debug level to DEBUG (instead of INFO) for push channel related logged events
+
 Changes from version 3.2.2 to version 3.2.3
 Changes from version 4.0.1 to version 4.0.2
 ===========================================
