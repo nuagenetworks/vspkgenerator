@@ -2,7 +2,8 @@ Changes from version 4.0.2 to version 4.0.3
 ===========================================
 
 - Upgraded to VSD specification version 4.0.5
-- Changed 'id' for each generated enum value to be the same as its 'name'. This is to allow backward compatibility in persisted enum values (in workflows) from this release forward. 
+- Changed 'id' for each generated enum value to be the same as its 'name'. This is to allow backward compatibility in persisted enum values (in workflows) from this release forward
+- Added generation of getter methods in generated enum classes to expose their (enum) values. As a result of this change, enum values can now be directly accessible through (JavaScript) scripting code and are also visible in vRO's API documentation  
 - Added storing of encrypted password in vspk.xml file
 - Set debug level to DEBUG (instead of INFO) for push channel related logged events
 
