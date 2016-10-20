@@ -14,5 +14,5 @@ deploy:
   on:
     tags: true
     distributions: sdist bdist_wheel
-    repo: nuagenetworks/vspk-generator
+    repo: nuagenetworks/vspkgenerator
     all_branches: true
