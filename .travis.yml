@@ -3,6 +3,9 @@ python:
 - '2.7'
 install:
     - pip install -r requirements.txt
+# the `script` key is mandatory but this package has no test so we just run the
+# shell command `true` to make travis happy
+script: true
 deploy:
   provider: pypi
   user: nuagenetworks
