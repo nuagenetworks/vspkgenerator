@@ -31,7 +31,7 @@ setup(
     name='vspkgenerator',
     packages=find_packages(exclude=['*tests*']),
     include_package_data=True,
-    version='1.1.2',
+    version='1.1.3',
     description='VSPK Generator',
     author='Christophe Serafin',
     author_email='christophe.serafin@nuagenetworks.net',
