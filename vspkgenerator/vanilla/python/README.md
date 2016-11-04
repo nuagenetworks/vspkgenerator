@@ -7,7 +7,7 @@ Learn how to use it from our [complete documentation](https://nuagenetworks.gith
 
 ## License
 
-Copyright (c) 2016, Nokia
+Copyright (c) 2015 Alcatel-Lucent, (c) 2016 Nokia
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
