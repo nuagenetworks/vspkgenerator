@@ -1,13 +1,13 @@
-# go-vspk
+# VSPK-Go
 
 go-vspk is a Go SDK for [Nuage VSP Platform](http://www.nuagenetworks.net/products/virtualized-services-platform/)
 
-Learn how to use it from our [complete documentation](http://nuagenetworks.github.io/sdkdoc/index.html)
+Learn how to use it from our [complete documentation](https://nuagenetworks.github.io/documentation/index.html)
 
 
 ## License
 
-Copyright (c) 2015, Alcatel-Lucent Inc
+Copyright (c) 2015 Alcatel-Lucent, (c) 2016 Nokia
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

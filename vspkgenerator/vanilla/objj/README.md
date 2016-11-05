@@ -1,10 +1,10 @@
-# objj-vspk
+# VSPK-Objj
 
-objj-vspk is a Objective-J SDK for [Nuage VSP Platform](http://www.nuagenetworks.net/products/virtualized-services-platform/)
+VSPK-Objj is a Objective-J SDK for [Nuage VSP Platform](http://www.nuagenetworks.net/products/virtualized-services-platform/)
 
 ## License
 
-Copyright (c) 2015, Alcatel-Lucent Inc
+Copyright (c) 2015 Alcatel-Lucent, (c) 2016 Nokia
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
