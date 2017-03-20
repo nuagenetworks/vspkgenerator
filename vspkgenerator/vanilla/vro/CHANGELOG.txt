@@ -1,3 +1,8 @@
+Changes from version 4.0.7 to version 4.0.8
+===========================================
+
+- Upgraded to VSD specification version 4.0.8
+
 Changes from version 4.0.6 to version 4.0.7
 ===========================================
 
