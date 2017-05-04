@@ -7,25 +7,14 @@
 
 ## Usage
 
-Environment Variables
+`vspkgenerator` operates on a directory that contains specifications.
 
-The following environment variables can be used to avoid having to enter command arguments
+Then to generate a python vspk from a directory containing specifications:
 
-    export MONOLITHE_GITHUB_API_URL=https://api.github.com
-    export MONOLITHE_GITHUB_TOKEN=<github-app-token> # username and password won't be used
-    export MONOLITHE_GITHUB_USERNAME=<github-username>
-    export MONOLITHE_GITHUB_ORGANIZATION=Documentation
-    export MONOLITHE_GITHUB_REPOSITORY=vsd-api-specifications
-    export MONOLITHE_GITHUB_REPOSITORY_PATH=/
+    $ generate-vspk -f path/to/dir -L python
 
-Then to generate a vsdk:
-
-    $ generate-vspk -b 3.2
-
-Then to generate a vsdk and the documentation:
-
-    $ generate-vspk -b 3.2 --doc
+It also handles git repositories. To build a vspk from multiple branches of repository:
 
 Then to generate the vsd api documentation:
 
-    $ generate-vsd-apidoc -b 3.2
+    $ generate-vspk -b master 4.0 -f path/to/repo -L python
