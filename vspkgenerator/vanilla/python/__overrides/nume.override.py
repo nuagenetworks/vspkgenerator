@@ -1,3 +1,3 @@
-def save(self, async=False, callback=None):
+def save(self, isasync=False, callback=None):
     """ """
-    super(NUMe, self).save(async=async, callback=callback, encrypted=False)
+    super(NUMe, self).save(isasync=isasync, callback=callback, encrypted=False)
