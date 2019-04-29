@@ -272,13 +272,13 @@ To un-assign all the entities, assign an empty list:
 Error handling
 --------------
 
-All of the previous methods raise a ``bambou.exception.BambouHTTPError`` when
+All of the previous methods raise a ``bambou2.exception.BambouHTTPError`` when
 they fail, which contains some interesting information, like the HTTP status
 code. It can be useful to catch these exceptions:
 
 .. code-block:: python
 
-    from bambou.exceptions import BambouHTTPError
+    from bambou2.exceptions import BambouHTTPError
 
     # We assume we have a parent trying to create a child.
 
