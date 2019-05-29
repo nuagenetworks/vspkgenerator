@@ -1,1 +1,1 @@
-monolithe>=1.4.0
+monolithe>=1.5.0,<2.0.0
