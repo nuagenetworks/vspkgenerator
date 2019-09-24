@@ -1,7 +1,7 @@
 # To build the docker image:
     P=proxy.com:8000
     docker build \
-        --build-arg HTTP_PROXY=$P \
+        --build-arg HTTP_PROXY=http://$P \
         --build-arg http_proxy=http://$P \
         --build-arg HTTPS_PROXY=$P \    
         -t vspkgenerator . 
@@ -16,7 +16,7 @@
         -e MONOLITHE_BRANCH=master \
         -e SPEC_REPO=https://github.com/nuagenetworks/vsd-api-specifications.git \
         -v `git rev-parse --show-toplevel`:/build/git/vspkgenerator \
-        vspkgenerator <version> <spec branch> <lang>
+        vspkgenerator <version> <lang> <spec tag>
 
     Any of the env varialbles in the docker command is optional.
 
@@ -31,4 +31,4 @@
 
 # Example:
     docker build -t vspkgenerator .
-    docker run -ti --rm -v `git rev-parse --show-toplevel`:/build/git/vspkgenerator vspkgenerator 6.0.1 master java
+    docker run -ti --rm -v `git rev-parse --show-toplevel`:/build/git/vspkgenerator vspkgenerator 6.0.1 java master

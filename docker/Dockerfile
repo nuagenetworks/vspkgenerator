@@ -1,9 +1,9 @@
-FROM centos:7
+FROM python:2.7-alpine
 
-RUN yum install -y epel-release && yum install -y git python-pip 
+RUN apk add git 
 RUN pip install configparser && pip install gitpython requests future jinja2 colorama
 RUN mkdir /build
 WORKDIR /build
-ENTRYPOINT ["/build/build.sh"]
+ENTRYPOINT ["sh", "/build/build.sh"]
 COPY build.sh /build
 RUN chmod 777 /build/build.sh
